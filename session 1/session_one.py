@@ -1,3 +1,8 @@
+
+'''
+    Standard Problem Set Version 1
+
+'''
 '''
 Problem 1: Hundred Acre Wood
 Write a function welcome()
@@ -14,14 +19,63 @@ and prints the string
 "Welcome to The Hundred Acre Wood <name>! My name is Christopher Robin."
 
 '''
+name = 'Ermiyas'
+def greeting(name):
+    print('Welcome to the Hundred Acre wood', name, '! My name is Christopher Robin')
+greeting(name)
 
 
 '''
 Problem 3
 Write a function print_catchphrase() that accepts a string character as a parameter
 and prints the catchphrase of the given character as outlined in the table below.
+'''
+char = 'Ermi'
+def print_catchphrase(char):
+    if char == 'Pooh':
+        print('Oh bother!')
+    elif char == 'Tigger':
+        print('TTFN: Ta-ta for now!')
+    elif char == 'Eeyore':
+        print('Thanks for noticing me.')
+    elif char == 'Christopher Robin':
+        print('Silly old bear')
+    else:
+        print('Sorry i do not know',char, 's catchphrase')
+print_catchphrase(char)
 
 '''
+Problem 4: Return Item
+Implement a function get_item() that accepts a 0-indexed list items and a non-negative integer x 
+and returns the element at index x in items. If x is not a valid index of items, return None.
+
+def get_item(items, x):
+	pass
+'''
+# items = ["piglet", "pooh", "roo", "rabbit"]
+# def get_item(items, x)
+
+
+
+'''
+Problem 5: Total Honey
+Winnie the Pooh wants to know how much honey he has. Write a function sum_honey()
+ that accepts a list of integers hunny_jars and returns the sum of all elements 
+ in the list. Do not use the built-in function sum().
+
+def sum_honey(hunny_jars):
+	pass
+'''
+
+'''
+Problem 6: Double Trouble
+Help Winnie the Pooh double his honey! Write a function doubled() that accepts a list of integers hunny_jars as a parameter and multiplies each element in the list by two. Return the doubled list.
+
+def doubled(hunny_jars):
+	pass
+
+'''
+
 
 '''
 p - 7
@@ -60,3 +114,53 @@ Pooh's To Dos:
 2. Task 2
 '''
 
+'''
+Problem 9: Pairs
+Rabbit is very particular about his belongings and wants to own an even number of each thing he owns. Write a function can_pair() that accepts a list of integers item_quantities. Return True if each number in item_quantities is even. Return False otherwise.
+
+def can_pair(item_quantities):
+	pass
+'''
+
+'''
+Problem 10: Split Haycorns
+Piglet's has collected a big pile of his favorite food, haycorns, and wants to split them evenly amongst his friends. Write a function split_haycorns() to help Piglet determine the number of ways he can split his haycorns into even groups. split_haycorns() accepts a positive integer quantity as a parameter and returns a list of all divisors of quantity.
+
+def split_haycorns(quantity):
+	pass
+'''
+
+'''
+Problem 11: T-I-Double Guh-ER
+Signs in the Hundred Acre Wood have been losing letters as Tigger bounces around stealing any letters he needs to spell out his name. Write a function tiggerfy() that accepts a string s, and returns a new string with the letters t, i, g, e, and r from it.
+
+def tiggerfy(s):
+	pass
+'''
+
+'''
+Problem 12: Thistle Hunt
+Pooh, Piglet, and Roo are looking for thistles to gift their friend Eeyore. Write a function locate_thistles() that takes in a list of strings items and returns a list of the indices of any elements with value "thistle". The indices in the resulting list should be ordered from least to greatest.
+
+def locate_thistles(items):
+	pass
+'''
+
+'''
+----------------------------------------------
+   Standard Problem Set Version 2               |
+                                                |
+----------------------------------------------  |
+'''
+
+'''
+Problem 1: Batman
+Write a function batman() that prints the string "I am vengeance. I am the night. I am Batman!".
+
+def batman():
+	pass
+'''
+
+'''
+
+'''
