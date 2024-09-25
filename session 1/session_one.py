@@ -20,8 +20,9 @@ and prints the string
 
 '''
 name = 'Ermiyas'
+
 def greeting(name):
-    print('Welcome to the Hundred Acre wood', name, '! My name is Christopher Robin')
+    print('Welcome to the Hundred Acre wood '+name+'! My name is Christopher Robin')
 greeting(name)
 
 
@@ -30,19 +31,24 @@ Problem 3
 Write a function print_catchphrase() that accepts a string character as a parameter
 and prints the catchphrase of the given character as outlined in the table below.
 '''
-char = 'Ermi'
-def print_catchphrase(char):
-    if char == 'Pooh':
-        print('Oh bother!')
-    elif char == 'Tigger':
-        print('TTFN: Ta-ta for now!')
-    elif char == 'Eeyore':
-        print('Thanks for noticing me.')
-    elif char == 'Christopher Robin':
-        print('Silly old bear')
+# what is the difference between print and return in python?
+# when to use print? when to use return
+
+
+character = 'Eeyore'
+
+def print_catchphrase():
+    if character == 'Pooh':
+       print('Oh bother!')
+    elif character == 'Tigger':
+        print ('TTFN: Ta-ta for now!')
+    elif character == 'Eeyore':
+        print('Thanks for noticing me')
+    elif character == 'Christopher Robin':
+        print( 'Silly old bear')
     else:
-        print('Sorry i do not know',char, 's catchphrase')
-print_catchphrase(char)
+        print('Sorry! I do not know' + character + 'catchphrase')
+print_catchphrase()
 
 '''
 Problem 4: Return Item
@@ -52,10 +58,16 @@ and returns the element at index x in items. If x is not a valid index of items,
 def get_item(items, x):
 	pass
 '''
-# items = ["piglet", "pooh", "roo", "rabbit"]
-# def get_item(items, x)
-
-
+# U- understand P- plan I - implement
+def get_item(items,x):
+    if x < 0 or x >= len(items):
+        return None
+    else:
+        return items[x]
+    
+items = ["piglet", "pooh", "roo", "rabbit"]
+x = -1
+print(get_item(items,x))
 
 '''
 Problem 5: Total Honey
@@ -63,20 +75,32 @@ Winnie the Pooh wants to know how much honey he has. Write a function sum_honey(
  that accepts a list of integers hunny_jars and returns the sum of all elements 
  in the list. Do not use the built-in function sum().
 
-def sum_honey(hunny_jars):
-	pass
 '''
+# u - 
+
+def sum_honey(hunny_jars):
+    num = 0
+    for num_jar  in hunny_jars:
+        num = num + num_jar
+    return num
+hunny_jars = [10, 3, 5, 5]
+print(sum_honey(hunny_jars))
+
+hunny_jars = []
+print(sum_honey(hunny_jars))
 
 '''
 Problem 6: Double Trouble
-Help Winnie the Pooh double his honey! Write a function doubled() that accepts a list of integers hunny_jars as a parameter and multiplies each element in the list by two. Return the doubled list.
-
-def doubled(hunny_jars):
-	pass
-
+Help Winnie the Pooh double his honey! Write a function doubled() that accepts a list of integers hunny_jars 
+as a parameter and multiplies each element in the list by two. Return the doubled list.
 '''
-
-
+def doubled(hunny_jars):
+    num = []
+    for num_jar in hunny_jars:
+        num .append(2 * num_jar)
+    return num
+hunny_jars = [1, 2, 3]
+print(doubled(hunny_jars))
 '''
 p - 7
 Winnie the Pooh and his friends are playing a game called Poohsticks where 
@@ -113,6 +137,8 @@ Pooh's To Dos:
 1. Task 1
 2. Task 2
 '''
+
+
 
 '''
 Problem 9: Pairs
